@@ -72,19 +72,13 @@ module.exports = {
       blockGasLimit: 0x1fffffffffffff,
       allowUnlimitedContractSize: true,
     },
-    rinkeby: {
-      url: process.env.RINKEBY,
+    mumbai: {
+      url: process.env.MUMBAI,
       timeout: 1000 * 60 * 60 * 24, // 1 day
-      accounts: [process.env.RINKEBY_PRIVATE_KEY],
+      accounts: [process.env.MUMBAI_PRIVATE_KEY],
     },
-    mainnet: {
-      gasPrice: 77000000000,
-      timeout: 1000 * 60 * 60 * 24, // 1 day
-      url: process.env.MAINNET,
-      accounts: [process.env.MAINNET_PRIVATE_KEY],
-    }
   },
-  etherscan: {
-    apiKey: process.env.ETHERSCAN_API_KEY
+  polygonscan: {
+    apiKey: process.env.POLYGONSCAN_API_KEY
   }
 };
